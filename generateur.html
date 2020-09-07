@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+    <title>Generateur De Gemmes Sur Clash Royale - Generateur Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generateur De Gemmes Sur Clash Royale" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Generateur De Gemmes Sur Clash Royale" />
+    <meta property="og:description" content="Generateur De Gemmes Sur Clash Royale" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://clashroyalemasters.fr/" />
+    <meta property="og:image" content="http://clashroyalemasters.fr/img/logo.png" />
+    <meta name="description" content="Generateur De Gemmes Sur Clash Royale">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/sweetalert2.min.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+
+    <link rel="icon" type="image/ico" href="/images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "WebSite",
+  "name": "Generateur De Gemmes Sur Clash Royale",
+  "alternateName": "Generateur Clash Royale Masters",
+  "url": "http://clashroyalemasters.fr"
+}
+ </script>
+
+</head>
+<body oncontextmenu="return false;">
+<div class="dotted-pattern"></div>
+<header>
+    <div class="branding-wrapper">
+        <img class="logo-img" src="img/logo.png" />
+    </div>
+</header>
+<div class="main-wrapper">
+    <div id="message-wrapper" class="message-wrapper mfp-hide">
+        <div class="message-inner-wrapper">
+            <div class="message-header">
+                <h3></h3>
+                <p class="message-header-subtitle"></p>
+            </div>
+            <div class="message-content">
+                <div class="message-content-inner-wrapper">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="console-resourceitem1-wrapper console-item-wrapper">
+                                <div class="console-resourceitem1-value-inner-wrapper">
+                                    <img class="console-resource-img" src="img/resource-1-img.png" />
+                                    <h5 class="console-resource-title">Coins:</h5>
+                                    <span id="console-resourceitem1-value" class="console-item-value console-resource-value">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="console-resourceitem2-wrapper console-item-wrapper">
+                                <div class="console-resourceitem2-value-inner-wrapper">
+                                    <img class="console-resource-img" src="img/resource-2-img.png" />
+                                    <h5 class="console-resource-title">Gems:</h5>
+                                    <span id="console-resourceitem2-value" class="console-item-value console-resource-value">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubblingG">
+							<span id="bubblingG_1">
+							</span> <span id="bubblingG_2">
+							</span> <span id="bubblingG_3">
+							</span>
+                    </div>
+                    <p class="normal-message"></p>
+                    <p class="console-message"></p>
+                    <div class="human-verification-wrapper">
+                        <div class="human-verification-inner-wrapper">
+                            <h3>Vérification Humaine</h3>
+                            <span>Pour éviter l'abus de robot de notre générateur, vous devez effectuer le calcul suivant puis cliquer sur le bouton ci-dessous.</span>
+                            <div class="test">
+                                <span style="color: black"> 5 + 7 = </span></span><input style="color: black" type="text"/>
+                            </div>
+
+                            <div id="human-verification-button" class="button-wrapper message-button-wrapper">
+                                <a style="cursor: pointer;" onclick="call_locker();">
+                                    <div class="button-inner-wrapper">
+                                        <button class="button-generator" type="button" role="button">Vérifiez maintenant
+                                        </button>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div id="locker_button_offers" style="margin-top: 15px;"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="end-step-wrapper" style="display: none">
+                        <div class="end-step-inner-wrapper">
+                            <h3>Validation</h3>
+                            <span>Pour permettre à tous tes copains de profiter du cette offre tant qu'il est encore temps, ajoute leur email:</span>
+                            <div>
+                                <ul>
+                                    <li><span style="color: black">email: </span></span><input style="color: black" type="text"/></li>
+                                    <li><span style="color: black">email: </span></span><input style="color: black" type="text"/></li>
+                                    <li><span style="color: black">email: </span></span><input style="color: black" type="text"/></li>
+                                    <li><span style="color: black">email: </span></span><input style="color: black" type="text"/></li>
+                                    <li><span style="color: black">email: </span></span><input style="color: black" type="text"/></li>
+                                </ul>
+
+
+                            </div>
+                            <div class="bubblingG">
+									<span id="bubblingG_1">
+									</span> <span id="bubblingG_2">
+									</span> <span id="bubblingG_3">
+									</span>
+                            </div>
+                            <div id="end-step-button" class="button-wrapper message-button-wrapper">
+                                <a style="cursor: pointer;" onclick="call_locker();">
+                                    <div class="button-inner-wrapper">
+                                        <button class="button-generator" type="button" role="button">Valider
+                                        </button>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="progressBarConsole" class="console-loadbar">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="generator-main-wrapper col-md-12">
+            <div class="generator-wrapper">
+                <div class="panel-box-border">
+                    <div class="generator-wrapper-inner panel-box-wrapper same-height-panel">
+                        <div class="panel-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="generator-header">
+                                        <h1>Générateur de ressources by Xav</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="first-step-wrapper" class="first-step-wrapper">
+                                <div class="row">
+                                    <div id="account-information-wrapper" class="account-information-wrapper col-md-6">
+                                        <div class="account-information-inner-container-wrapper">
+                                            <h3 class="generator-panel-title">Information sur le compte</h3>
+                                            <div id="blurred-account" class="blurred-overlay blurred-account"></div>
+                                            <div class="row">
+                                                <div class="account-information-inner-wrapper">
+                                                    <div class="account-info-fields-wrapper">
+                                                        <div class="account-username-wrapper">
+                                                            <h3 class="resources-title">Entrez votre nom d'utilisateur
+                                                            </h3>
+                                                            <div class="row">
+                                                                <div class="account-username-item-wrapper col-md-12">
+                                                                    <div class="account-username-border-wrapper">
+                                                                        <img class="input-player-tag" src="img/player.png" />
+                                                                        <input id="coc-player-tag" type="text" maxlength="15" placeholder="Nom d'utilisateur...
+" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="platform-select-wrapper">
+                                                            <h3 class="resources-title">Sélectionnez votre plate-forme
+                                                            </h3>
+                                                            <div class="row">
+                                                                <div class="platform-item-wrapper col-md-12">
+                                                                    <div class="platform-item-border-wrapper">
+                                                                        <img class="input-player-tag" src="img/platform.png" />
+                                                                        <select id="coc-player-platform">
+                                                                            <option value="Android">Android</option>
+                                                                            <option value="iOS">iOS</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="button-wrapper first-step-button-wrapper">
+                                                        <button id="connect-button" class="button-generator" type="button" role="button">Relier
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="resources-select-wrapper" class="resources-select-wrapper resources-select-wrapper-blurred col-md-6">
+                                        <div class="resources-select-inner-container-wrapper">
+                                            <h3 class="generator-panel-title">Montant des ressources
+                                            </h3>
+                                            <div id="blurred-resources" class="blurred-overlay blurred-resources"></div>
+                                            <div class="row">
+                                                <div class="resource-item-select-wrapper col-md-12 top-resource-item">
+                                                    <div class="row">
+                                                        <div class="col-xs-1 responsive-button-wrapper no-padding-right">
+                                                            <div class="value-button-wrapper">
+                                                                <div id="decrease-resource-1" class="decrease-button value-button">-</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-10 responsive-value-wrapper">
+                                                             <h3 class="resources-title">Montant des Coins
+                                                            </h3>
+                                                            <div id="resource-item-1-amount-wrapper" class="selected-amount-wrapper">
+                                                                <img class="resource-img" src="img/resource-1-img.png" />
+                                                                <div id="resource-1-amount">200000</div>
+                                                            </div>
+                                                            <div id="progressBar" class="resource-1-loadbar">
+                                                                <div></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-1 responsive-button-wrapper no-padding-left">
+                                                            <div class="value-button-wrapper">
+                                                                <div id="increase-resource-1" class="increase-button value-button">+</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="resource-item-select-wrapper col-md-12 top-resource-item second">
+                                                    <div class="row">
+                                                        <div class="col-xs-1 responsive-button-wrapper no-padding-right">
+                                                            <div class="value-button-wrapper">
+                                                                <div id="decrease-resource-2" class="decrease-button value-button">-</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-10 responsive-value-wrapper">
+                                                            <h3 class="resources-title">Montant des Gems</h3>
+                                                            <div id="resource-item-2-amount-wrapper" class="selected-amount-wrapper">
+                                                                <img class="resource-img" src="img/resource-2-img.png" />
+                                                                <div id="resource-2-amount">10000</div>
+                                                            </div>
+                                                            <div id="progressBarResource2" class="resource-2-loadbar">
+                                                                <div></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-1 responsive-button-wrapper no-padding-left">
+                                                            <div class="value-button-wrapper">
+                                                                <div id="increase-resource-2" class="increase-button value-button">+</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="button-wrapper download-application-button-wrapper">
+                                                <button id="second-step-button" class="button-generator" type="button" role="button">Générer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="processing-wrapper" class="processing-wrapper">
+                                <div class="main-console-wrapper">
+                                    <div class="starting-loading-wrapper">
+                                        <div class="wrapper">
+                                            <div class="cssload-loader"></div>
+                                        </div>
+                                        <span class="starting-loading-title animated infinite bounce">En traitement</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="generator-status-wrapper">
+                <div class="panel-box-border">
+                    <div class="generator-status-inner panel-box-wrapper same-height-panel">
+                        <div class="generator-status-panel-wrapper">
+                            <div class="panel-content">
+                                <div class="panel-title">
+                                    <h2>Statut du générateur</h2>
+                                </div>
+                                <div class="status-wrapper">
+                                    <div class="status-line-wrapper">
+                                        <span class="status-label">Dernière mise à jour<span class="font-fix">:</span></span>
+                                        <span class=" status-highlighted" id="para1"></span>
+                                    </div>
+                                    <div class="status-line-wrapper">
+                                        <span class="status-label">Statut du serveur<span class="font-fix">:</span></span>
+                                        <span class="status status-highlighted server-status">Online</span>
+                                    </div>
+                                    <div class="status-line-wrapper last">
+											<span class="stats">
+													<span class="status-label">Utilisateurs Online<span class="font-fix">:</span></span> <span id="online" class="status-highlighted"></span>
+											</span>
+                                    </div>
+                                    <img class="stats-img" src="img/stats-img.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="recent-activity-wrapper">
+                <div class="panel-box-border">
+                    <div class="recent-activity-inner panel-box-wrapper same-height-panel">
+                        <div class="panel-content">
+                            <div class="panel-title">
+                                <h2>Activité récente</h2>
+                            </div>
+                            <div id="recent-activity" class="recent-activity">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-wrapper col-md-4">
+            <div class="panel-box-border">
+                <div class="chat-wrapper-inner panel-box-wrapper same-height-bottom-panel">
+                    <div class="panel-content">
+                        <div class="panel-title">
+                            <h2>Discussion en temps réel</h2>
+                        </div>
+                        <div class="chat-inner-wrapper">
+                            <div class="livechatContainerTop" style=" height: 0px!important; border-top-left-radius: 4px; border-top-right-radius: 4px;">
+								<span class="yellow_text" style=" font-size: 16px; position: relative; font-weight: 100; bottom: 10px;">
+									Generator Chatroom (<span id="online2"></span>)</span>
+                            </div>
+                            <div class="livechatContainerCenter">
+                                <div id="livechatContainerChat" style="text-shadow: none;">
+                                    <div class="livechatOverlaySmall" style=" display:none; z-index: 3; position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.34);">
+                                    </div>
+                                    <div id="livechatContainerChatUserName">
+                                        <div class="livechatContainerTop">
+                                            <span class="chat-input-label">Entrez votre nom d'utilisateur de chat</span>
+                                        </div>
+                                        <input id="livechatInputChatUserName" type="text">
+                                        <div class="blue_button" id="livechatButtonChatUserName">
+                                            <div class="blue_button_text noselect">
+                                                Enregistrer
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="livechatContainerChatContent">
+                                        <div id="livechatChatContent"></div>
+                                    </div>
+                                </div>
+                                <div id="livechatContainerChatControls">
+                                    <div style="margin-bottom: 5px; text-shadow: none;">
+                                        <input id="livechatInputChat" placeholder="Envoyer un message" type="text">
+                                        <div class="live-chat-button-wrapper">
+                                            <div id="livechatButtonChat">
+                                                <div class="blue_button_text noselect">
+                                                    Envoyer
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="policy-links">
+        <a class="popup-tos popup-link" href="#terms-of-service">Conditions d'utilisation</a><span class="pp-sep"> |</span>
+        <a class="popup-pp popup-link" href="#privacy-policy">Politique de confidentialité </a>
+    </div>
+    <p>Toutes les marques commerciales, les marques de service, les noms commerciaux, les vêtements commerciaux, les noms de produits et les logos apparaissant sur le site appartiennent à leurs propriétaires respectifs.</p>
+</footer>
+<div id="terms-of-service" class="tos-popup-wrapper popup-wrapper mfp-hide">
+    <h1>CONDITIONS D'UTILISATION</h1>
+
+    <p>Ces termes de service («Conditions», «Accord») sont un accord entre l'opérateur de MyWebsite («opérateur de site Web», «nous», «nous» ou «notre») et vous («Utilisateur», «vous» ou "votre"). Le présent Accord énonce les conditions générales de votre utilisation du site Web http://www.clashroyalemasters.fr et de l'un de ses produits ou services (collectivement, «Site Web» ou «Services»).</p>
+    <h2>CONDITIONS D'ÂGE</h2>
+
+    <p>Vous devez avoir au moins 18 ans pour utiliser ce site. En utilisant ce site Web et en acceptant cet accord, vous garantissez et déclarez que vous avez au moins 18 ans.</p>
+    <h2>SAUVEGARDES</h2>
+
+    <p>Nous ne sommes pas responsables du contenu que se trouve sur le site Web. En aucun cas, nous ne sommes tenus responsables de toute perte de contenu. Il est de votre seule responsabilité de conserver une sauvegarde appropriée de votre contenu. Nonobstant ce qui précède, à certaines occasions et dans certaines circonstances, sans aucune obligation, nous pourrons peut-être restaurer une partie ou la totalité de vos données qui ont été supprimées à une certaine date et heure où nous avons peut-être sauvegardé des données pour atteindre nos objectifs. Nous ne garantissons pas que les données dont vous avez besoin seront disponibles.</p>
+    <h2>LIENS VERS D'AUTRES SITES</h2>
+
+    <p>Même si ce site Web peut être lié à d'autres sites Web, nous n'impliquons pas, directement ou indirectement, aucune approbation, association, parrainage, approbation ou affiliation avec un site Web lié, sauf mention contraire. Nous ne sommes pas responsables de l'examen ou de l'évaluation, et nous ne garantissons pas les offres, les entreprises ou les particuliers ou le contenu de leurs sites Web. Nous n'assumons aucune responsabilité pour les actions, les produits, les services et le contenu de tout autre tiers. Vous devriez examiner attentivement les énoncés légaux et les autres conditions d'utilisation de tout site Web auquel vous accédez via un lien de ce site Web. Votre lien vers d'autres pages hors site ou d'autres sites Web est à vos risques et périls.</p>
+    <h2>ANNONCES</h2>
+
+    <p>Au cours de l'utilisation du site Web, vous pouvez entrer en correspondance ou participer à des promotions d'annonceurs ou de sponsors montrant leurs biens ou services sur le site Web. Toute activité de ce type et les termes, conditions, garanties ou représentations associés à une telle activité sont uniquement entre vous et le tiers concerné. Nous n'assumons aucune responsabilité, obligation ou responsabilité pour une telle correspondance, achat ou promotion entre vous et un tel tiers.</p>
+    <h2>USAGES INTERDITS</h2>
+
+    <p>En plus des autres termes énoncés dans l'Accord, vous êtes interdit d'utiliser le site Web ou son contenu: a) à des fins illégales; (B) demander à d'autres personnes d'exercer ou de participer à des actes illégaux; (C) violer toute règlementation, règles, lois ou ordonnances locales, fédérales, provinciales ou étatiques; (D) enfreindre ou violer nos droits de propriété intellectuelle ou les droits de propriété intellectuelle d'autrui; E) harceler, abuser, insulter, nuire, diffamer, calomnier, dénigrer, intimider ou discriminer en fonction du genre, de l'orientation sexuelle, de la religion, de l'origine ethnique, de la race, de l'âge, de l'origine nationale ou de l'incapacité; (F) soumettre des informations fausses ou trompeuses; (G) télécharger ou transmettre des virus ou tout autre type de code malveillant qui sera ou pourrait être utilisé de quelque manière que ce soit qui affectera la fonctionnalité ou l'exploitation du Service ou de tout site Web, d'autres sites Web ou Internet connexes; (H) recueillir ou suivre les renseignements personnels d'autrui; (I) spam, phish, pharm, prétexte, araignée, rampe ou gratte; (J) pour tout but obscène ou immoral; ou (k) interférer ou contourner les caractéristiques de sécurité du Service ou tout site Web connexe, d'autres sites Web ou Internet. Nous nous réservons le droit de résilier votre utilisation du Service ou de tout site Web connexe pour violation de l'une quelconque des utilisations interdites.</p>
+    <h2>LIMITATION DE RESPONSABILITÉ
+    </h2>
+
+    <p>Dans toute la mesure permise par la loi applicable, l'opérateur du site Web, ses sociétés affiliées, ses dirigeants, ses administrateurs, ses employés, ses agents, ses fournisseurs ou ses donneurs de licence ne seront soumis à aucune personne pour: a): toute couverture indirecte, incidente, spéciale, punitive (Y compris, mais sans s'y limiter, les dommages résultant de perte de profits, de revenus, de ventes, de survaleur, d'utilisation ou de contenu, d'impact sur les entreprises, d'interruption d'activité, de perte d'anticipation, de perte d'opportunité d'affaires), en raison de toute théorie de la responsabilité, Y compris, sans limitation, les contrats, les frais délictuels, la garantie, la violation des obligations légales, la négligence ou autrement, même si l'opérateur du site Web a été informé de la possibilité de tels dommages ou aurait pu prévoir de tels dommages. Dans la mesure permise par la loi applicable, la responsabilité globale de l'opérateur du site Web et de ses sociétés affiliées, dirigeants, employés, agents, fournisseurs et concédants de licence, se rapportant aux services sera limitée à un montant supérieur à un dollar ou à tout montant effectivement payé en espèces par vous à l'opérateur du site Web pour la période antérieure d'un mois avant le premier événement ou événement donnant lieu à cette responsabilité. Les limitations et les exclusions s'appliquent également si ce remèqde ne vous dédommage pas totalement de toute perte ou défaut de son but essentiel.</p>
+    <h2>INDEMNITÉ</h2>
+
+    <p>Vous acceptez d'indemniser et de détenir l'opérateur du site Web et ses sociétés affiliées, administrateurs, dirigeants, employés et agents de tout dommage, perte, dommage ou frais, y compris les honoraires d'avocat raisonnables, engagés dans le cadre ou en provenance d'un tiers les allégations, les réclamations, les actions, les litiges ou les demandes qui sont revendiqués contre l'un d'entre eux en raison de votre contenu, de votre utilisation du site Web ou des services ou de toute inconduite délibérée de votre part.</p>
+    <h2>DIVISIBILITÉ</h2>
+
+    <p>Tous les droits et restrictions contenus dans le présent Contrat peuvent être exercés et ne sont applicables et contraignants que dans la mesure où ils ne violent aucune loi applicable et sont destinés à être limités dans la mesure nécessaire afin qu'ils ne rendent pas illégale cette Convention, invalide ou inapplicable. Si une disposition ou une partie de toute disposition du présent Accord doit être jugée illégale, invalide ou inapplicable par un tribunal de juridiction compétente, l'intention des parties est que les autres dispositions ou parties de celles-ci constituent leur accord à l'égard de la l'objet de la présente loi, et toutes les dispositions restantes ou les parties de celles-ci resteront en vigueur et de plein effet.</p>
+    <h2>RÉSOLUTION DE CONFLIT</h2>
+
+    <p>La formation, l'interprétation et l'exécution du présent Accord et les différends qui en découlent sont régis par les lois de fond et de procédure de Berne, en Suisse, compte tenu de ses règles sur les conflits ou le choix de la loi et, dans la mesure applicable, les lois de Suisse. La juridiction exclusive et le lieu des actions liées à l'objet de la présente loi sont les tribunaux fédéraux et étatiques situés à Berne, en Suisse, et vous soumettez par la présente à la juridiction personnelle de ces tribunaux. Vous déclarez par la présente tout droit à un procès par jury dans toute instance découlant ou liée à cet accord. La Convention des Nations Unies sur les contrats de vente internationale de marchandises ne s'applique pas au présent Accord.</p>
+    <h2>MODIFICATIONS ET AMENDEMENTS</h2>
+
+    <p>Nous nous réservons le droit de modifier le présent Contrat ou ses politiques relatives au Site ou aux Services à tout moment, en vigueur à la publication d'une version mise à jour de cet Accord sur le Site. Lorsque nous le ferons, nous allons réviser la date mise à jour au bas de cette page. L'utilisation continue du site Web après ces modifications constituera votre consentement à ces changements.</p>
+    <h2>ACCEPTATION DE CES TERMES</h2>
+
+    <p>Vous reconnaissez avoir lu cet accord et accepter tous ses termes et conditions. En utilisant le site Web ou ses services, vous acceptez d'être lié par le présent Accord. Si vous n'acceptez pas de respecter les termes de la présente convention, vous n'êtes pas autorisé à utiliser ou accéder au site Web et à ses services.</p>
+    <h2>CONTACTEZ-NOUS</h2>
+
+    <p>Si vous avez des questions sur cette politique, contactez-nous.</p>
+
+    <p>Ce document a été mis à jour le 16 June 2017</p>
+</div>
+<div id="privacy-policy" class="pp-popup-wrapper popup-wrapper mfp-hide">
+    <h1>POLITIQUE DE CONFIDENTIALITÉ</h1>
+
+    <p>Cette politique de confidentialité («Politique») décrit comment nous recueillons, protégeons et utilisons les informations personnelles identifiables («Informations personnelles») que vous («Utilisateur», «vous» ou «votre») fournissez sur http: //www.mywebsite ... sur le site internet et l'un de ses produits ou services (collectivement, «Site Web» ou «Services»). Il décrit également les choix dont vous disposez concernant notre utilisation de vos informations personnelles et comment vous pouvez accéder à cette information et la mettre à jour. Cette politique ne s'applique pas aux pratiques des entreprises dont nous ne possédons ni ne contrôlons ni à des personnes que nous n'utilisons ni ne gérons.</p>
+
+    <h2>COLLECTE D'INFORMATIONS PERSONNELLES</h2>
+
+    <p>Nous recevons et stockons toute information que vous nous fournissez sciemment lorsque vous remplissez tous les formulaires en ligne sur le site Web. Vous pouvez choisir de ne pas nous fournir certaines informations, mais vous ne pourrez peut-être pas profiter de certaines des fonctionnalités du site.</p>
+
+    <h2>COLLECTE D'INFORMATIONS NON PERSONNELLES</h2>
+
+    <p>Lorsque vous visitez le site Web, nos serveurs enregistrent automatiquement les informations que votre navigateur envoie. Ces données peuvent inclure des informations telles que l'adresse IP, le type de navigateur et la version de votre ordinateur, le type et la version du système d'exploitation, les préférences linguistiques ou la page Web que vous visitiez avant de venir sur notre site Web, les pages de notre site Web que vous visitez, le temps passé ces pages, les informations que vous recherchez sur notre site Web, les horaires d'accès et les dates, ainsi que d'autres statistiques.</p>
+    <h2>UTILISATION DES INFORMATIONS COLLECTÉES</h2>
+
+    <p>Toute information que nous recueillons auprès de vous peut être utilisée pour personnaliser votre expérience; améliorer notre site Web; améliorer le service à la clientèle et répondre aux requêtes et aux courriels de nos clients; gèrer et exploiter notre site Web et nos services. Les informations non personnelles recueillies ne servent qu'à identifier les cas potentiels d'abus et à établir des informations statistiques concernant le trafic et l'utilisation du site Web. Cette information statistique n'est pas agrégée de manière à identifier un utilisateur particulier du système.</p>
+    <h2>ENFANTS</h2>
+
+    <p>Nous ne recueillons pas volontairement de renseignements personnels auprès d'enfants de moins de 13 ans. Si vous avez moins de 13 ans, ne soumettez aucune information personnelle sur notre site Web ou notre service. Nous encourageons les parents et les tuteurs légaux à surveiller l'utilisation d'Internet de leurs enfants et à aider à appliquer cette Politique en demandant à leurs enfants de ne jamais fournir d'informations personnelles via notre site Web ou notre Service sans leur autorisation. Si vous avez des raisons de croire qu'un enfant de moins de 13 ans nous a fourni des informations personnelles à travers notre site Web ou notre service, contactez-nous.</p>
+    <h2>COOKIES</h2>
+
+    <p>Le site Web utilise "cookies" pour personnaliser votre expérience en ligne. Un cookie est un fichier texte placé sur votre disque dur par un serveur de page Web. Les cookies ne peuvent pas être utilisés pour exécuter des programmes ou pour délivrer des virus sur votre ordinateur. Les cookies sont uniquement attribués à vous et ne peuvent être lus que par un serveur Web dans le domaine qui vous a envoyé le cookie. Nous pouvons utiliser des cookies pour collecter, stocker et suivre l'information à des fins statistiques pour exploiter notre site Web et nos services. Vous avez la possibilité d'accepter ou de refuser les cookies. La plupart des navigateurs Web acceptent automatiquement les cookies, mais vous pouvez généralement modifier le réglage de votre navigateur pour refuser les cookies si vous préférez. Si vous choisissez de refuser les cookies, il est possible que vous ne puissiez pas connaître pleinement les fonctionnalités du site Web et des services.</p>
+    <h2>PUBLICITÉ</h2>
+
+    <p>Nous pouvons afficher des publicités en ligne et nous pouvons partager des informations agrégées et non identifiables sur nos clients que nous collectons dans le processus d'inscription ou par le biais d'enquêtes et de promotions en ligne avec certains annonceurs. Nous ne partageons pas d'informations personnelles identifiables sur les clients individuels avec les annonceurs. Dans certains cas, nous pouvons utiliser ces informations agrégées et non identifiables pour diffuser des publicités personnalisées sur le public visé.</p>
+    <h2>LIENS VERS D'AUTRES SITES</h2>
+
+    <p>Notre site Web contient des liens vers d'autres sites Web qui ne sont ni détenus ni contrôlés par nous. Veuillez noter que nous ne sommes pas responsables des pratiques de confidentialité de ces autres sites Web ou de tiers. Nous vous encourageons à prendre connaissance lorsque vous quittez notre site Web et à lire les déclarations de confidentialité de chaque site Web qui peut recueillir des informations personnelles.</p>
+    <h2>SÉCURITÉ DE L'INFORMATION</h2>
+
+    <p>Nous protégeons l'information que vous fournissez sur les serveurs informatiques dans un environnement contrôlé et sécurisé, protégé contre tout accès, utilisation ou divulgation non autorisés. Nous maintenons des garanties administratives, techniques et physiques raisonnables dans le but de protéger contre l'accès, l'utilisation, la modification et la divulgation non autorisés d'informations personnelles sous son contrôle et sa garde. Cependant, aucune transmission de données sur Internet ou réseau sans fil ne peut être garantie. Par conséquent, alors que nous nous efforçons de protéger vos informations personnelles, vous reconnaissez que (i) il existe des limitations de sécurité et de sécurité d'Internet qui échappent à notre contrôle; (Ii) la sécurité, l'intégrité et la confidentialité de toutes les informations et données échangées entre vous et notre site Web ne peuvent être garanties; Et (iii) ces informations et ces données peuvent être considérées ou falsifiées en transit par un tiers, malgré les meilleurs efforts.</p>
+    <h2>VIOLATION DE DONNÉES</h2>
+
+    <p>Dans le cas où nous constatons que la sécurité du site Web a été compromise ou que les informations personnelles des utilisateurs ont été divulguées à des tiers indépendants à la suite d'activités externes, y compris, mais sans s'y limiter, des attaques de sécurité ou des fraudes, nous nous réservons le droit de prendre des mesures raisonnablement appropriées, y compris, mais sans s'y limiter, les enquêtes et les rapports, ainsi que la notification et la coopération avec les autorités chargées de l'application de la loi. En cas de violation de données, nous ferons des efforts raisonnables pour informer les personnes concernées si nous croyons qu'il existe un risque raisonnable de nuire à l'utilisateur en raison de la violation ou si un avis est exigé par la loi. Lorsque nous le ferons, nous publierons un avis sur le site Web.</p>
+    <h2>MODIFICATIONS ET AMENDEMENTS</h2>
+
+    <p>Nous nous réservons le droit de modifier cette politique de confidentialité relative au site Web ou aux services à tout moment, en vigueur à la publication d'une version mise à jour de cette politique de confidentialité sur le site Web. Lorsque nous le ferons, nous allons réviser la date mise à jour au bas de cette page. L'utilisation continue du site Web après ces modifications constituera votre consentement à ces changements.</p>
+    <h2>ACCEPTATION DE CETTE POLITIQUE</h2>
+
+    <p>Vous reconnaissez avoir lu cette politique et accepter tous ses termes et conditions. En utilisant le site Web ou ses services, vous acceptez d'être lié par cette politique. Si vous n'acceptez pas de respecter les termes de cette politique, vous n'êtes pas autorisé à utiliser ou accéder au site Web et à ses services.</p>
+    <h2>CONTACTEZ-NOUS</h2>
+
+    <p>Si vous avez des questions sur cette politique, contactez-nous.</p>
+
+    <p>Ce document a été mis à jour le 16 June 2017</p>
+</div>
+<div id="contact-us" class="contact-popup-wrapper popup-wrapper mfp-hide">
+    <h1>Send us a message</h1>
+    <div class="contact-form-wrapper">
+        <form role="form" id="contactForm" data-toggle="validator" class="shake">
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="name" class="h4">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Entrez le nom" required data-error="S'il vous plaît entrez votre nom.
+">
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="email" class="h4">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Entrez un email" required data-error="Entrez votre email.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="h4 ">Message</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Entrez votre message" required data-error="Entrez votre message."></textarea>
+                <div class="help-block with-errors"></div>
+            </div>
+            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+            <div id="msgSubmit" class="h3 text-center hidden"></div>
+            <div class="clearfix"></div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    window.onload = function () {
+        var webService = "https://ipv4.jsonip.com";
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = webService + "?callback=MyIP";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    };
+
+    function MyIP(response) {
+        document.getElementById("ip").innerHTML = response.ip;
+    }
+    var eenum = 420;
+    var ee;
+
+    function dis_num2() {
+        document.getElementById("online").innerHTML = eenum;
+        var randWay = Math.floor(Math.random() * 10 + 1);
+        if (randWay <= 5) {
+            eenum = eenum + Math.floor(Math.random() * 10 + 1);
+            ;
+        } else {
+            eenum = eenum - Math.floor(Math.random() * 10 + 1);
+            ;
+        }
+        ee = setTimeout("dis_num2()", 3000);
+    }
+    dis_num2();
+
+
+    document.getElementById("para1").innerHTML = formatAMPM();
+
+    function formatAMPM() {
+        var d = new Date(),
+
+            hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
+            ampm = d.getHours() >= 12 ? 'pm' : 'am',
+            months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        return months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ';
+    }
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/sweetalert2.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/validator.min.js"></script>
+<script type="text/javascript" src="js/typed.min.js"></script>
+<script type="text/javascript" src="js/form-scripts.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/sticky.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/locker.js"></script>
+</body>
+</html>
