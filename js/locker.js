@@ -51,7 +51,7 @@ function ogSetContents2() {
 
 
 function end(options) {
-    window.location.href = "/tu-es-un-pigeon.html"
+    window.location.href = "tu-es-un-pigeon.html"
     console.log('end');
 }
 function call_locker(options) {
